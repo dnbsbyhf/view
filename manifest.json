@@ -1,0 +1,18 @@
+{
+    "name": "view-picture",
+    "version": "1.0",
+    "permissions": [
+        "tabs", "http://www.dianping.com/photos/*"
+    ],
+
+    "browser_action": {
+		"default_icon": "eye.png"
+	},  
+    "content_scripts":[
+		{
+			"matches":["http://www.dianping.com/photos/*"],
+			"js":["load.js"]
+		} 
+	],
+    "manifest_version": 2
+}
